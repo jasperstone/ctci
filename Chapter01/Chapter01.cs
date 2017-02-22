@@ -1,6 +1,6 @@
 ﻿namespace Chapter01
 {
-    public class Q01_1
+    public class Question01
     {
         public bool IsUniqueAscii(string input)
         {

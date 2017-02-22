@@ -9,7 +9,7 @@ namespace UnitTests
         [TestMethod]
         public void Q01TestValidUniques()
         {
-            var q = new Q01_1();
+            var q = new Question01();
             Assert.IsTrue(q.IsUniqueAscii("abc"));
             Assert.IsTrue(q.IsUniqueAscii(""));
         }
@@ -17,7 +17,7 @@ namespace UnitTests
         [TestMethod]
         public void Q01TestInvalidUniques()
         {
-            var q = new Q01_1();
+            var q = new Question01();
             Assert.IsFalse(q.IsUniqueAscii("aa"));
             Assert.IsFalse(q.IsUniqueAscii("abcdefghijklmnopqrstuvwxyza"));
         }
