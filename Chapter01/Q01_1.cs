@@ -1,13 +1,19 @@
-﻿using System;
-using ctci.Contracts;
-
-namespace Chapter01
+﻿namespace Chapter01
 {
-    public class Q01_1 : IQuestion
+    public class Q01_1
     {
-        public void Run()
+        public bool IsUniqueAscii(string input)
         {
-            Console.WriteLine("This is chapter 1 question 1.");
+            if (input.Length > 256) return false;
+
+            var isSet = new bool[256];
+            foreach(var c in input)
+            {
+                var index = (int) c;
+                if (isSet[index]) return false;
+                isSet[index] = true;
+            }
+            return true;
         }
     }
 }

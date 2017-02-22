@@ -2,3 +2,4 @@ _ReSharper.ctci/
 bin/
 Debug/
 obj/
+TestResults/

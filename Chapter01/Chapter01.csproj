@@ -49,12 +49,6 @@
     <Compile Include="Q01_1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ctci.Contracts\ctci.Contracts.csproj">
-      <Project>{0DA18DEE-8D64-4646-83F6-AD69ADE63634}</Project>
-      <Name>ctci.Contracts</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
