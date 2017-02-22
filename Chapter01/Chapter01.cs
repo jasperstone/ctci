@@ -1,4 +1,6 @@
-﻿namespace Chapter01
+﻿using System.Linq;
+
+namespace Chapter01
 {
     public class Question01
     {
@@ -14,6 +16,16 @@
                 isSet[index] = true;
             }
             return true;
+        }
+    }
+
+    public class Question02
+    {
+        public bool ArePermutations(string a, string b)
+        {
+            var asorted = string.Concat(a.OrderBy(c => c));
+            var bsorted = string.Concat(b.OrderBy(c => c));
+            return asorted == bsorted;
         }
     }
 }
